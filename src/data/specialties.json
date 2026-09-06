@@ -1,0 +1,38 @@
+[
+  {
+    "id": "implantodontia",
+    "title": "Implantodontia",
+    "description": "Reabilitação oral com planejamento preciso para devolver função, segurança e naturalidade ao sorriso.",
+    "image": "/assets/implantodontia.jpeg"
+  },
+  {
+    "id": "periodontia",
+    "title": "Periodontia",
+    "description": "Prevenção e tratamento das doenças da gengiva, cuidando da saúde bucal de forma integral.",
+    "image": "/assets/periodontia.jpeg"
+  },
+  {
+    "id": "estetica-dental",
+    "title": "Estética Dental",
+    "description": "Clareamento, restaurações estéticas e planejamento do sorriso para resultados naturais e harmônicos.",
+    "image": "/assets/estetica-facial.jpeg"
+  },
+  {
+    "id": "ortodontia",
+    "title": "Ortodontia",
+    "description": "Tratamentos para alinhamento dentário e correção da mordida, com opções modernas e discretas.",
+    "image": "/assets/ortodontia.jpeg"
+  },
+  {
+    "id": "endodontia",
+    "title": "Endodontia",
+    "description": "Tratamento de canal com técnicas modernas para preservar o dente e aliviar desconfortos.",
+    "image": "/assets/endodontia.jpeg"
+  },
+  {
+    "id": "odontopediatria",
+    "title": "Odontopediatria",
+    "description": "Atendimento acolhedor para crianças, construindo desde cedo uma relação positiva com a saúde bucal.",
+    "image": "/assets/odontopediatria.jpeg"
+  }
+]

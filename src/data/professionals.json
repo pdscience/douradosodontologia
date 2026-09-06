@@ -1,0 +1,25 @@
+[
+  {
+    "id": "hisadora-duarte",
+    "name": "Dra. Hisadora Duarte",
+    "crop": "CRO-MS 00000",
+    "specialty": "Ortodontia",
+    "image": "/assets/hisadora_duarte.jpeg",
+    "bio": "Meu nome é Hisadora Duarte, sou cirurgiã-dentista e atuo na odontologia com atendimento infantil e adulto, buscando oferecer um cuidado individualizado, humanizado e baseado nas necessidades de cada paciente.\n\nAtualmente, estou me especializando em Ortodontia, área pela qual tenho grande interesse e que vem ampliando minha atuação profissional. Meu objetivo é proporcionar saúde, função e qualidade de vida aos meus pacientes, sempre buscando atualização e aprimoramento na prática clínica."
+  },
+  {
+    "id": "simone-todescato",
+    "name": "Dra. Simone Todescato",
+    "crop": "CRO 8588",
+    "specialty": "Odontologia Geral",
+    "image": "/assets/simone_todescato.jpeg",
+    "content": "<h4>Formação</h4><ul><li>Cirurgiã-Dentista formada pela UNIGRAN</li><li>Pós-graduada em Odontologia para Pacientes com Comprometimentos Sistêmicos</li><li>2 anos de atuação profissional</li></ul><h4>Atuação</h4><ul><li>Atendimento adulto e infantil</li><li>Odontologia preventiva</li><li>Tratamentos restauradores</li><li>Pequenas cirurgias</li></ul><h4>Atendimento Humanizado</h4><ul><li>Acolhimento de pacientes com medo ou ansiedade odontológica</li><li>Condicionamento e preparo para o atendimento</li><li>Condicionamento infantil</li><li>Experiência odontológica personalizada, tranquila e segura</li></ul><h4>Estética & Autoestima</h4><ul><li>Clareamento dental</li><li>Toxina botulínica</li><li>Procedimentos voltados à valorização da autoestima</li><li>Resultados naturais, elegantes e personalizados</li></ul><h4>Minha Essência</h4><p><strong>Precisão. Cuidado. Naturalidade.</strong></p><p>Acredito em uma odontologia que une excelência técnica, segurança e sensibilidade, respeitando a individualidade de cada paciente.</p><p>Meu propósito é proporcionar um atendimento exclusivo e humanizado, no qual saúde, estética e autoestima estejam em equilíbrio.</p><p>Mais do que transformar sorrisos, transformar a experiência de cuidar de si.</p>"
+  },
+  {
+    "id": "maria-rosiane",
+    "name": "Dra. Maria Rosiane",
+    "crop": "CRO-MS 00000",
+    "specialty": "Ortodontia",
+    "image": "/assets/maria_rosiane.jpeg"
+  }
+]

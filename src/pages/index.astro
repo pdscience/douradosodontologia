@@ -1,0 +1,141 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DoctorModal from '../components/DoctorModal.astro';
+import SiteScripts from '../components/SiteScripts.astro';
+
+import specialties from '../data/specialties.json';
+import professionals from '../data/professionals.json';
+---
+
+<Base>
+  <Header slot="body" />
+
+  <main slot="body">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Odontologia contemporânea</div>
+          <h1>Seu sorriso merece <em>cuidado</em> extraordinário.</h1>
+          <p>Na Dourados Odontologia, unimos tecnologia, experiência e acolhimento para transformar cada consulta em uma experiência segura, confortável e personalizada.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Agendar minha consulta →</a>
+            <a class="btn btn-light" href="#especialidades">Conhecer especialidades</a>
+          </div>
+          <div class="hero-note">
+            <div>✦ <strong>Atendimento humanizado</strong></div>
+            <div>✦ <strong>Tecnologia e precisão</strong></div>
+          </div>
+        </div>
+        <div class="visual" id="visual">
+          <div class="ring r2 parallax" data-speed="-0.025"></div>
+          <div class="ring r1 parallax" data-speed="-0.045"></div>
+          <div class="orb parallax" data-speed="0.018">
+            <img class="logo-hero" src="/assets/logo_odonto.jpg" alt="Logo Dourados Odontologia" />
+          </div>
+          <div class="float-card fc1 parallax" data-speed="0.05"><strong>+10 anos</strong><span>de experiência clínica</span></div>
+          <div class="float-card fc2 parallax" data-speed="-0.035"><strong>Seu sorriso</strong><span>é nossa prioridade</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item">✦ <span>Equipe especializada</span></div>
+        <div class="trust-item">◈ <span>Estrutura moderna</span></div>
+        <div class="trust-item">♡ <span>Atendimento humanizado</span></div>
+        <div class="trust-item">✓ <span>Plano personalizado</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="especialidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Especialidades</div>
+          <h2>Odontologia completa para todas as fases do seu sorriso.</h2>
+          <p>Cuidados integrados para estética, saúde e função, com planejamento individualizado e acompanhamento próximo.</p>
+        </div>
+        <div class="service-grid">
+          {specialties.map((specialty) => (
+            <article class="service reveal">
+              <div class="service-photo"><img src={specialty.image} alt={specialty.title} /></div>
+              <div class="service-body"><h3>{specialty.title}</h3><p>{specialty.description}</p></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="clinica">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <div class="tooth">♢</div>
+          <div class="badge"><strong>Precisão + acolhimento</strong><br><span>Uma experiência pensada para você.</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow">A clínica</div>
+          <h2>Mais do que tratar dentes, cuidamos de pessoas.</h2>
+          <p>Na Dourados Odontologia, acreditamos que um tratamento de excelência começa pela escuta. Nossa equipe trabalha com planejamento, tecnologia e atenção aos detalhes para entregar resultados seguros e personalizados.</p>
+          <p>Do primeiro contato ao acompanhamento pós-tratamento, você encontra um ambiente elegante, tranquilo e preparado para cuidar do seu sorriso.</p>
+          <div class="checks">
+            <div class="check"><b>✓</b> Avaliação personalizada</div>
+            <div class="check"><b>✓</b> Tecnologia moderna</div>
+            <div class="check"><b>✓</b> Profissionais qualificados</div>
+            <div class="check"><b>✓</b> Ambiente acolhedor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section doctors" id="dentistas">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Nossa equipe</div>
+          <h2>Profissionais que cuidam do seu sorriso com propósito.</h2>
+          <p>Conheça alguns dos especialistas da Dourados Odontologia. Substitua os nomes e informações abaixo pelos dados reais da clínica.</p>
+        </div>
+        <div class="doctor-grid">
+          {professionals.map((professional) => (
+            <article class="doctor reveal" data-modal={`modal-${professional.id}`}>
+              <div class="doctor-photo"><img src={professional.image} alt={professional.name} /></div>
+              <div class="doctor-body"><h3>{professional.name}</h3><div class="role">{professional.crop} · {professional.specialty}</div></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <div class="eyebrow" style="color:#73e4ec">Seu próximo sorriso começa aqui</div>
+            <h2>Vamos cuidar do seu sorriso?</h2>
+            <p>Agende uma avaliação e descubra o tratamento mais adequado para você.</p>
+          </div>
+          <a class="btn" href="https://wa.me/5567998422189?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Dourados%20Odontologia." target="_blank">Agendar pelo WhatsApp ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer slot="body" />
+
+  {professionals.map((professional) => (
+    <DoctorModal
+      slot="body"
+      id={`modal-${professional.id}`}
+      name={professional.name}
+      crop={professional.crop}
+      specialty={professional.specialty}
+      image={professional.image}
+    >
+      {professional.content && (
+        <Fragment set:html={professional.content} />
+      )}
+    </DoctorModal>
+  ))}
+
+  <SiteScripts slot="body" />
+</Base>

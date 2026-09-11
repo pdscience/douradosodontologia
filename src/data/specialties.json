@@ -2,37 +2,79 @@
   {
     "id": "implantodontia",
     "title": "Implantodontia",
-    "description": "Reabilitação oral com planejamento preciso para devolver função, segurança e naturalidade ao sorriso.",
-    "image": "/assets/implantodontia.jpeg"
+    "description": "Reconstruir função. Recuperar confiança. Devolver qualidade de vida.",
+    "longDescription": "Substituímos dentes ausentes por implantes de titânio de alta qualidade, devolvendo mastigação, estética e confiança. Todo o planejamento é digital e personalizado, garantindo um resultado natural e duradouro.",
+    "image": "/assets/implantodontia.jpeg",
+    "highlights": [
+      "Planejamento digital individualizado",
+      "Implantes de titânio de alta qualidade",
+      "Prótese fixa com aparência natural",
+      "Acompanhamento completo pós-procedimento"
+    ]
   },
   {
     "id": "periodontia",
     "title": "Periodontia",
     "description": "Prevenção e tratamento das doenças da gengiva, cuidando da saúde bucal de forma integral.",
-    "image": "/assets/periodontia.jpeg"
+    "longDescription": "Cuidamos da saúde das gengivas e dos tecidos de suporte dos dentes, prevenindo e tratando gengivite e periodontite. Uma boca saudável começa pela gengiva — e a periodontia é a base de tudo.",
+    "image": "/assets/periodontia.jpeg",
+    "highlights": [
+      "Diagnóstico e tratamento da gengivite",
+      "Raspagem e alisamento radicular",
+      "Odontologia regenerativa",
+      "Prevenção de perda óssea e mobilidade"
+    ]
   },
   {
     "id": "estetica-dental",
     "title": "Estética Dental",
-    "description": "Clareamento, restaurações estéticas e planejamento do sorriso para resultados naturais e harmônicos.",
-    "image": "/assets/estetica-facial.jpeg"
+    "description": "Naturalidade, proporção e harmonia.",
+    "longDescription": "Transformamos sorrisos com clareamento, facetas de porcelana, restaurações em resina e planejamento estético completo. Cada sorriso é único — por isso o tratamento é desenhado sob medida para você.",
+    "image": "/assets/estetica-facial.jpeg",
+    "highlights": [
+      "Clareamento a laser e em consultório",
+      "Facetas e lentes de contato",
+      "Restaurações estéticas em resina",
+      "Planejamento digital do sorriso"
+    ]
   },
   {
     "id": "ortodontia",
     "title": "Ortodontia",
-    "description": "Tratamentos para alinhamento dentário e correção da mordida, com opções modernas e discretas.",
-    "image": "/assets/ortodontia.jpeg"
+    "description": "Mais do que alinhar dentes. Criar equilíbrio e harmonia.",
+    "longDescription": "Alinhamos os dentes e corrigimos a mordida com aparelhos fixos, alinhadores invisíveis e opções discretas para todas as idades. Resultados que melhoram a estética, a fala e a mastigação.",
+    "image": "/assets/ortodontia.jpeg",
+    "highlights": [
+      "Alinhadores invisíveis",
+      "Aparelhos estéticos e fixos",
+      "Correção da mordida",
+      "Ortodontia para adultos e crianças"
+    ]
   },
   {
     "id": "endodontia",
     "title": "Endodontia",
-    "description": "Tratamento de canal com técnicas modernas para preservar o dente e aliviar desconfortos.",
-    "image": "/assets/endodontia.jpeg"
+    "description": "Precisão para preservar o que é seu.",
+    "longDescription": "O tratamento de canal elimina a infecção e preserva o dente natural, com técnicas modernas e praticamente indolora. Salvamos dentes que antes seriam perdidos, devolvendo saúde e conforto.",
+    "image": "/assets/endodontia.jpeg",
+    "highlights": [
+      "Tratamento de canal indolor",
+      "Tecnologia de ponta na localização de canais",
+      "Restauração do dente tratado",
+      "Alívio rápido de desconfortos"
+    ]
   },
   {
     "id": "odontopediatria",
     "title": "Odontopediatria",
     "description": "Atendimento acolhedor para crianças, construindo desde cedo uma relação positiva com a saúde bucal.",
-    "image": "/assets/odontopediatria.jpeg"
+    "longDescription": "Atendemos os pequenos com paciência, carinho e um ambiente preparado para eles. Construímos desde cedo uma relação positiva e de confiança com a saúde bucal, prevenindo e tratando com cuidado especial.",
+    "image": "/assets/odontopediatria.jpeg",
+    "highlights": [
+      "Atendimento lúdico e acolhedor",
+      "Prevenção de cáries e hábitos saudáveis",
+      "Tratamentos adaptados para crianças",
+      "Acompanhamento do desenvolvimento bucal"
+    ]
   }
 ]

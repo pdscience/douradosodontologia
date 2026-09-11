@@ -41,6 +41,13 @@
       if (modal) modal.classList.add('active');
     });
   });
+  document.querySelectorAll('.service[data-modal]').forEach(card => {
+    card.addEventListener('click', () => {
+      const modalId = (card as HTMLElement).dataset.modal!;
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.add('active');
+    });
+  });
   document.querySelectorAll('.modal-close').forEach(btn => {
     btn.addEventListener('click', () => {
       const overlay = btn.closest('.modal-overlay');

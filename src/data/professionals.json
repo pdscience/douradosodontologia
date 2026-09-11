@@ -1,25 +1,42 @@
 [
   {
+    "id": "maria-rosiane",
+    "name": "Dra. Maria Rosiane Alves",
+    "crop": "CRO 6773 – MS",
+    "specialty": "Implantodontia e Ortodontia",
+    "image": "/assets/maria_rosiane.png",
+    "content": "<h4>Formação & Expertise</h4><p>Cirurgiã-Dentista formada em 2018, com atuação direcionada à Implantodontia e Ortodontia. Também possui formação em Inteligência Emocional pelo Método EVO, que fortalece sua abordagem humanizada e a relação de confiança com o paciente. Atendimento adulto e infantil.</p><h4>Implantodontia & Reabilitação</h4><p>Atuação voltada à recuperação da função, estética e segurança do sorriso, por meio de tratamentos planejados de acordo com as necessidades individuais, buscando equilíbrio entre funcionalidade, naturalidade e qualidade de vida.</p><h4>Ortodontia & Harmonia do Sorriso</h4><p>Mais do que alinhar dentes, o objetivo é contribuir para um sorriso equilibrado, funcional e harmônico, respeitando as características e expectativas de cada paciente.</p><h4>Atendimento Humanizado</h4><p>Cada paciente possui uma história. Cada sorriso possui uma necessidade. Cada tratamento merece ser único. Por isso, a escuta, o acolhimento e o planejamento individualizado conduzem uma experiência segura, confortável e humanizada — inclusive no atendimento infantil.</p><h4>Minha Essência</h4><p><strong>Excelência. Inteligência. Cuidado. Transformação.</strong></p><p>Mais do que transformar sorrisos, transformar a forma como cada pessoa se sente ao sorrir.</p>"
+  },
+  {
     "id": "hisadora-duarte",
     "name": "Dra. Hisadora Duarte",
-    "crop": "CRO-MS 00000",
+    "crop": "CRO 8560 – MS",
     "specialty": "Ortodontia",
     "image": "/assets/hisadora_duarte.jpeg",
-    "bio": "Meu nome é Hisadora Duarte, sou cirurgiã-dentista e atuo na odontologia com atendimento infantil e adulto, buscando oferecer um cuidado individualizado, humanizado e baseado nas necessidades de cada paciente.\n\nAtualmente, estou me especializando em Ortodontia, área pela qual tenho grande interesse e que vem ampliando minha atuação profissional. Meu objetivo é proporcionar saúde, função e qualidade de vida aos meus pacientes, sempre buscando atualização e aprimoramento na prática clínica."
+    "content": "<h4>Formação & Atuação</h4><p>Cirurgiã-Dentista com atuação no atendimento infantil e adulto, dedicada a oferecer uma odontologia baseada na escuta, no cuidado individualizado e nas necessidades de cada paciente. Encontra-se em processo de especialização em Ortodontia.</p><h4>Ortodontia & Planejamento</h4><p>A Ortodontia representa uma nova etapa de aprimoramento profissional, unindo conhecimento, planejamento e atenção aos detalhes para promover tratamentos cada vez mais individualizados, compreendendo cada paciente de forma integral.</p><h4>Atendimento Humanizado</h4><p>Cada paciente é único — e seu tratamento também deve ser. Atendimento pautado em acolhimento, escuta e confiança. No atendimento infantil, dedicação especial à construção de uma relação positiva com a odontologia.</p><h4>Minha Essência</h4><p><strong>Cuidado. Precisão. Evolução. Humanização.</strong></p><p>Porque cada sorriso tem uma história. E cada história merece ser cuidada de forma única.</p>"
   },
   {
     "id": "simone-todescato",
     "name": "Dra. Simone Todescato",
-    "crop": "CRO 8588",
+    "crop": "CRO 8588 – MS",
     "specialty": "Odontologia Geral",
     "image": "/assets/simone_todescato.jpeg",
-    "content": "<h4>Formação</h4><ul><li>Cirurgiã-Dentista formada pela UNIGRAN</li><li>Pós-graduada em Odontologia para Pacientes com Comprometimentos Sistêmicos</li><li>2 anos de atuação profissional</li></ul><h4>Atuação</h4><ul><li>Atendimento adulto e infantil</li><li>Odontologia preventiva</li><li>Tratamentos restauradores</li><li>Pequenas cirurgias</li></ul><h4>Atendimento Humanizado</h4><ul><li>Acolhimento de pacientes com medo ou ansiedade odontológica</li><li>Condicionamento e preparo para o atendimento</li><li>Condicionamento infantil</li><li>Experiência odontológica personalizada, tranquila e segura</li></ul><h4>Estética & Autoestima</h4><ul><li>Clareamento dental</li><li>Toxina botulínica</li><li>Procedimentos voltados à valorização da autoestima</li><li>Resultados naturais, elegantes e personalizados</li></ul><h4>Minha Essência</h4><p><strong>Precisão. Cuidado. Naturalidade.</strong></p><p>Acredito em uma odontologia que une excelência técnica, segurança e sensibilidade, respeitando a individualidade de cada paciente.</p><p>Meu propósito é proporcionar um atendimento exclusivo e humanizado, no qual saúde, estética e autoestima estejam em equilíbrio.</p><p>Mais do que transformar sorrisos, transformar a experiência de cuidar de si.</p>"
+    "content": "<h4>Formação</h4><ul><li>Cirurgiã-Dentista formada pela UNIGRAN</li><li>Pós-graduada em Odontologia para Pacientes com Comprometimentos Sistêmicos</li></ul><h4>Atuação Clínica</h4><ul><li>Atendimento adulto e infantil</li><li>Odontologia preventiva</li><li>Tratamentos restauradores</li><li>Pequenas cirurgias</li></ul><h4>Atendimento Humanizado</h4><ul><li>Acolhimento de pacientes com medo ou ansiedade odontológica</li><li>Condicionamento e preparo para o atendimento</li><li>Condicionamento infantil</li><li>Experiência odontológica personalizada, tranquila e segura</li></ul><h4>Estética & Autoestima</h4><ul><li>Clareamento dental</li><li>Toxina botulínica</li><li>Procedimentos voltados à valorização da autoestima</li><li>Resultados naturais, elegantes e personalizados</li></ul><h4>Minha Essência</h4><p><strong>Precisão. Cuidado. Naturalidade.</strong></p><p>Mais do que transformar sorrisos, transformar a experiência de cuidar de si.</p>"
   },
   {
-    "id": "maria-rosiane",
-    "name": "Dra. Maria Rosiane",
-    "crop": "CRO-MS 00000",
-    "specialty": "Ortodontia",
-    "image": "/assets/maria_rosiane.jpeg"
+    "id": "patricia-franco",
+    "name": "Dra. Patricia Franco",
+    "crop": "CRO 6770 – MS",
+    "specialty": "Endodontia",
+    "image": "",
+    "content": "<h4>Formação & Expertise</h4><p>Cirurgiã-Dentista formada pela UNIGRAN em 2018, com atuação direcionada à Endodontia, área dedicada ao cuidado e tratamento das estruturas internas do dente. Atuação pautada pelo conhecimento técnico, atenção aos detalhes e busca constante por aprimoramento.</p><h4>Endodontia & Saúde Bucal</h4><p>A Endodontia exige precisão, planejamento e cuidado em cada etapa. Atuação com foco na preservação da saúde bucal e na recuperação da função, com tratamentos seguros e individualizados.</p><h4>Cuidado & Precisão</h4><p>Cada tratamento começa com uma avaliação cuidadosa e um planejamento adequado, unindo segurança, precisão e conforto.</p><h4>Atendimento Humanizado</h4><p>Mais do que tratar um dente, é importante compreender a pessoa. Abordagem acolhedora e individualizada para uma experiência mais tranquila e segura.</p><h4>Minha Essência</h4><p><strong>Precisão. Cuidado. Confiança. Excelência.</strong></p><p>Porque preservar um dente é mais do que tratar. É cuidar da saúde, da função e da qualidade de vida.</p>"
+  },
+  {
+    "id": "thaliza-da-rui",
+    "name": "Dra. Thaliza Da Rui",
+    "crop": "CRO 6075 – MS",
+    "specialty": "Cirurgia Bucomaxilofacial",
+    "image": "/assets/thallize.jpeg",
+    "content": "<h4>Especialização & Expertise</h4><p>Especialista em Cirurgia e Traumatologia Bucomaxilofacial, com atuação voltada especialmente para: implantes, Harmonização Orofacial (HOF), Disfunção Temporomandibular (DTM) e dor orofacial — integrando saúde, função, estética e qualidade de vida.</p><h4>Cirurgia, Precisão & Segurança</h4><p>Em constante aprimoramento, com atuação em frentes de maior complexidade, aliando excelência técnica, atualização e segurança. A utilização da sedação proporciona uma experiência mais tranquila, acolhedora e segura, especialmente para pacientes com ansiedade.</p><h4>Cuidado Humanizado</h4><p>Atendimento construído a partir da escuta, do acolhimento e do planejamento individualizado, respeitando o tempo, os limites e os objetivos de cada pessoa.</p><h4>Minha Essência</h4><p><strong>Precisão. Segurança. Humanização. Excelência.</strong></p><p>Porque cuidar não é apenas tratar. É compreender, acolher e transformar.</p>"
   }
 ]

@@ -1,5 +1,6 @@
 ---
 const whatsappUrl = "https://wa.me/5567998422189?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Dourados%20Odontologia.";
+const mapsUrl = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Rua João Rosa Góes, 1049 - Centro, Dourados - MS, 79825-070");
 ---
 
 <footer>
@@ -7,7 +8,7 @@ const whatsappUrl = "https://wa.me/5567998422189?text=Olá!%20Gostaria%20de%20ag
     <div class="footer-grid">
       <div>
         <div class="footer-brand">Dourados Odontologia</div>
-        <p style="margin-top:12px;max-width:330px">Excelência, tecnologia e cuidado humano para você sorrir com confiança.</p>
+        <p style="margin-top:12px;max-width:330px">Odontologia de excelência, personalizada para você. Excelência em cada detalhe. Cuidado em cada sorriso.</p>
         <div class="footer-social">
           <a href="https://www.instagram.com/dourados.odont/" target="_blank" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -22,19 +23,30 @@ const whatsappUrl = "https://wa.me/5567998422189?text=Olá!%20Gostaria%20de%20ag
         </div>
       </div>
       <div>
-        <h3>Atendimento</h3>
-        <p>Segunda a sexta<br>08:00 às 18:00</p>
-        <p style="margin-top:8px">(67)99842-2189</p>
+        <h3>Navegação</h3>
+        <p><a href="#inicio">Início</a><br /><a href="#clinica">A Clínica</a><br /><a href="#especialidades">Especialidades</a><br /><a href="#profissionais">Profissionais</a><br /><a href="#resultados">Casos Clínicos</a><br /><a href="#depoimentos">Depoimentos</a><br /><a href="#contato">Contato</a></p>
       </div>
       <div>
-        <h3>Endereço</h3>
-        <p>Rua João Rosa Góes, 1049<br>Centro — Dourados, MS<br>CEP 79825-070</p>
-        <p style="margin-top:8px"><a href={whatsappUrl} target="_blank">Fale conosco →</a></p>
+        <h3>Contato</h3>
+        <p><a href={whatsappUrl} target="_blank">WhatsApp</a><br />(67) 3021-2189<br /><a href="https://www.instagram.com/dourados.odont/" target="_blank">Instagram</a></p>
+        <p style="margin-top:8px">
+          <a href={mapsUrl} target="_blank" rel="noopener" class="maps-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+            </svg>
+            Rua João Rosa Góes, 1049<br />Centro — Dourados, MS<br />CEP 79825-070
+          </a>
+        </p>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <p>Segunda a sexta<br />08:00 às 18:00</p>
+        <p style="margin-top:8px">Responsabilidade técnica:<br />[Inserir nome e CRO]</p>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Dourados Odontologia. Todos os direitos reservados.</span>
-      <span>Desenvolvido com tecnologia e cuidado.</span>
+      <span>Excelência em cada detalhe. Cuidado em cada sorriso.</span>
     </div>
   </div>
 </footer>

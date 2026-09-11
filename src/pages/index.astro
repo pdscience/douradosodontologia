@@ -3,29 +3,33 @@ import Base from '../layouts/Base.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import DoctorModal from '../components/DoctorModal.astro';
+import ServiceModal from '../components/ServiceModal.astro';
 import SiteScripts from '../components/SiteScripts.astro';
 
 import specialties from '../data/specialties.json';
 import professionals from '../data/professionals.json';
+
+const whatsappUrl = "https://wa.me/5567998422189?text=" + encodeURIComponent("Olá! Gostaria de agendar uma avaliação na Dourados Odontologia.");
 ---
 
 <Base>
   <Header slot="body" />
 
   <main slot="body">
+    <!-- 01 — HERO -->
     <section class="hero" id="inicio">
       <div class="container hero-grid">
         <div class="reveal">
-          <div class="eyebrow">Odontologia contemporânea</div>
-          <h1>Seu sorriso merece <em>cuidado</em> extraordinário.</h1>
-          <p>Na Dourados Odontologia, unimos tecnologia, experiência e acolhimento para transformar cada consulta em uma experiência segura, confortável e personalizada.</p>
+          <div class="eyebrow">Dourados Odontologia</div>
+          <h1>Seu sorriso merece uma experiência <em>extraordinária.</em></h1>
+          <p>Odontologia de excelência, personalizada para você. Tecnologia, precisão e cuidado humano reunidos para proporcionar tratamentos planejados de forma individualizada, com segurança, naturalidade e excelência em cada detalhe.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contato">Agendar minha consulta →</a>
+            <a class="btn btn-primary" href={whatsappUrl} target="_blank">Agendar minha avaliação →</a>
             <a class="btn btn-light" href="#especialidades">Conhecer especialidades</a>
           </div>
           <div class="hero-note">
-            <div>✦ <strong>Atendimento humanizado</strong></div>
-            <div>✦ <strong>Tecnologia e precisão</strong></div>
+            <div>✦ <strong>Excelência em cada detalhe.</strong></div>
+            <div>✦ <strong>Cuidado em cada sorriso.</strong></div>
           </div>
         </div>
         <div class="visual" id="visual">
@@ -34,87 +38,271 @@ import professionals from '../data/professionals.json';
           <div class="orb parallax" data-speed="0.018">
             <img class="logo-hero" src="/assets/logo_odonto.jpg" alt="Logo Dourados Odontologia" />
           </div>
-          <div class="float-card fc1 parallax" data-speed="0.05"><strong>+10 anos</strong><span>de experiência clínica</span></div>
+          <div class="float-card fc1 parallax" data-speed="0.05"><strong>Planejamento</strong><span>individualizado</span></div>
           <div class="float-card fc2 parallax" data-speed="-0.035"><strong>Seu sorriso</strong><span>é nossa prioridade</span></div>
         </div>
       </div>
     </section>
 
-    <section class="trust">
-      <div class="container trust-grid">
-        <div class="trust-item">✦ <span>Equipe especializada</span></div>
-        <div class="trust-item">◈ <span>Estrutura moderna</span></div>
-        <div class="trust-item">♡ <span>Atendimento humanizado</span></div>
-        <div class="trust-item">✓ <span>Plano personalizado</span></div>
+    <!-- 02 — POSICIONAMENTO -->
+    <section class="section positioning" id="sobre">
+      <div class="container positioning-grid">
+        <div class="reveal">
+          <div class="eyebrow">Posicionamento</div>
+          <h2>Mais do que odontologia. Uma experiência de cuidado.</h2>
+        </div>
+        <div class="reveal">
+          <p>Na Dourados Odontologia, acreditamos que cuidar de um sorriso é cuidar de uma história. Por isso, unimos conhecimento, tecnologia, precisão e sensibilidade para oferecer uma experiência odontológica personalizada, segura e acolhedora.</p>
+          <p>Cada paciente é único. Cada sorriso possui características, desejos e necessidades próprias. Por isso, cada tratamento é planejado individualmente, respeitando a saúde, a naturalidade, a harmonia e os objetivos de quem confia seu sorriso a nós.</p>
+          <p><strong>Porque transformar um sorriso é também transformar a maneira como você se sente.</strong></p>
+          <a class="btn btn-primary" href="#clinica">Conheça a Dourados Odontologia →</a>
+        </div>
       </div>
     </section>
 
+    <!-- 03 — PILARES -->
+    <section class="section pillars" id="pilares">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Os pilares da Dourados</div>
+          <h2>Excelência que você sente. Resultados que você percebe.</h2>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar reveal">
+            <div class="pillar-icon">◎</div>
+            <h3>Precisão</h3>
+            <p class="pillar-tag">Cada detalhe importa.</p>
+            <p>Planejamento individualizado e atenção aos detalhes para proporcionar tratamentos mais seguros, previsíveis e personalizados.</p>
+          </article>
+          <article class="pillar reveal">
+            <div class="pillar-icon">⬡</div>
+            <h3>Tecnologia</h3>
+            <p class="pillar-tag">Recursos que ampliam possibilidades.</p>
+            <p>Utilizamos tecnologia e conhecimento para tornar o diagnóstico, o planejamento e o tratamento mais eficientes e confortáveis.</p>
+          </article>
+          <article class="pillar reveal">
+            <div class="pillar-icon">♡</div>
+            <h3>Naturalidade</h3>
+            <p class="pillar-tag">O seu sorriso continua sendo seu.</p>
+            <p>Buscamos resultados que respeitem suas características, valorizando a harmonia e a naturalidade.</p>
+          </article>
+          <article class="pillar reveal">
+            <div class="pillar-icon">✦</div>
+            <h3>Cuidado</h3>
+            <p class="pillar-tag">Antes de cuidar do seu sorriso, cuidamos de você.</p>
+            <p>Escuta, acolhimento e acompanhamento fazem parte de uma experiência pensada para que você se sinta seguro em cada etapa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — ESPECIALIDADES -->
     <section class="section services" id="especialidades">
       <div class="container">
         <div class="section-head reveal">
           <div class="eyebrow">Especialidades</div>
-          <h2>Odontologia completa para todas as fases do seu sorriso.</h2>
-          <p>Cuidados integrados para estética, saúde e função, com planejamento individualizado e acompanhamento próximo.</p>
+          <h2>Cuidado completo para cada fase do seu sorriso.</h2>
+          <p>Na Dourados Odontologia, diferentes áreas da odontologia se unem para oferecer uma visão completa e personalizada de cada paciente.</p>
         </div>
         <div class="service-grid">
           {specialties.map((specialty) => (
-            <article class="service reveal">
+            <article class="service reveal" data-modal={`modal-service-${specialty.id}`}>
               <div class="service-photo"><img src={specialty.image} alt={specialty.title} /></div>
-              <div class="service-body"><h3>{specialty.title}</h3><p>{specialty.description}</p></div>
+              <div class="service-body">
+                <h3>{specialty.title}</h3>
+                <p>{specialty.description}</p>
+                <span class="service-link">Conhecer {specialty.title} →</span>
+              </div>
             </article>
           ))}
         </div>
       </div>
     </section>
 
-    <section class="section about" id="clinica">
+    <!-- 05 — DIFERENCIAL -->
+    <section class="section differential" id="diferencial">
+      <div class="container differential-box reveal">
+        <div class="eyebrow" style="color:#73e4ec">Nosso diferencial</div>
+        <h2>Cada pessoa chega com uma história. Nosso trabalho começa pela escuta.</h2>
+        <p>Antes de pensar em procedimentos, queremos entender você. Seus objetivos. Suas expectativas. Suas necessidades. Seus receios.</p>
+        <p>A partir dessa escuta, construímos um planejamento personalizado, buscando unir saúde, função, estética e bem-estar. Porque acreditamos que um tratamento de excelência não começa pelo procedimento. Começa pela compreensão de quem está diante de nós.</p>
+        <a class="btn" href={whatsappUrl} target="_blank">Agendar minha avaliação →</a>
+      </div>
+    </section>
+
+    <!-- 06 — TECNOLOGIA E PLANEJAMENTO -->
+    <section class="section tech" id="tecnologia">
       <div class="container about-grid">
-        <div class="about-photo reveal">
-          <div class="tooth">♢</div>
-          <div class="badge"><strong>Precisão + acolhimento</strong><br><span>Uma experiência pensada para você.</span></div>
-        </div>
         <div class="about-copy reveal">
-          <div class="eyebrow">A clínica</div>
-          <h2>Mais do que tratar dentes, cuidamos de pessoas.</h2>
-          <p>Na Dourados Odontologia, acreditamos que um tratamento de excelência começa pela escuta. Nossa equipe trabalha com planejamento, tecnologia e atenção aos detalhes para entregar resultados seguros e personalizados.</p>
-          <p>Do primeiro contato ao acompanhamento pós-tratamento, você encontra um ambiente elegante, tranquilo e preparado para cuidar do seu sorriso.</p>
+          <div class="eyebrow">Tecnologia e planejamento</div>
+          <h2>Tecnologia a serviço de uma odontologia mais precisa.</h2>
+          <p>A tecnologia faz parte da nossa rotina, mas nunca substitui aquilo que consideramos essencial: conhecimento, experiência e olhar humano.</p>
+          <p>Utilizamos recursos modernos para auxiliar no diagnóstico, planejamento e acompanhamento dos tratamentos, buscando oferecer mais precisão, segurança, conforto e previsibilidade.</p>
           <div class="checks">
-            <div class="check"><b>✓</b> Avaliação personalizada</div>
-            <div class="check"><b>✓</b> Tecnologia moderna</div>
-            <div class="check"><b>✓</b> Profissionais qualificados</div>
-            <div class="check"><b>✓</b> Ambiente acolhedor</div>
+            <div class="check"><b>✓</b> Tecnologia para enxergar melhor</div>
+            <div class="check"><b>✓</b> Planejamento para decidir melhor</div>
+            <div class="check"><b>✓</b> Cuidado para fazer melhor</div>
           </div>
+          <div style="margin-top:26px">
+            <a class="btn btn-light" href="#clinica">Conhecer nossa estrutura →</a>
+          </div>
+        </div>
+        <div class="about-photo reveal">
+          <div class="tooth">⬡</div>
+          <div class="badge"><strong>Precisão + acolhimento</strong><br /><span>Diagnóstico, planejamento e acompanhamento.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section doctors" id="dentistas">
+    <!-- 07 — PROFISSIONAIS -->
+    <section class="section doctors" id="profissionais">
       <div class="container">
         <div class="section-head reveal">
-          <div class="eyebrow">Nossa equipe</div>
-          <h2>Profissionais que cuidam do seu sorriso com propósito.</h2>
-          <p>Conheça alguns dos especialistas da Dourados Odontologia. Substitua os nomes e informações abaixo pelos dados reais da clínica.</p>
+          <div class="eyebrow">Profissionais</div>
+          <h2>Por trás de cada sorriso, existem pessoas que escolheram cuidar.</h2>
+          <p>Uma equipe qualificada faz toda a diferença na experiência e no resultado de um tratamento. Nossos profissionais unem formação, conhecimento, atualização constante e, acima de tudo, compromisso com cada paciente.</p>
         </div>
         <div class="doctor-grid">
           {professionals.map((professional) => (
             <article class="doctor reveal" data-modal={`modal-${professional.id}`}>
-              <div class="doctor-photo"><img src={professional.image} alt={professional.name} /></div>
-              <div class="doctor-body"><h3>{professional.name}</h3><div class="role">{professional.crop} · {professional.specialty}</div></div>
+              <div class="doctor-photo">
+                {professional.image ? (
+                  <img src={professional.image} alt={professional.name} />
+                ) : (
+                  <span class="doctor-initials">{professional.name.replace('Dra. ', '').split(' ').map((w) => w[0]).slice(0, 2).join('')}</span>
+                )}
+              </div>
+              <div class="doctor-body">
+                <h3>{professional.name}</h3>
+                <div class="role">{professional.crop} · {professional.specialty}</div>
+                <span class="service-link">Conhecer perfil →</span>
+              </div>
             </article>
           ))}
         </div>
       </div>
     </section>
 
+    <!-- 08 — A CLÍNICA -->
+    <section class="section clinic" id="clinica">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">A clínica</div>
+          <h2>Um espaço pensado para você.</h2>
+          <p>Cada detalhe da Dourados Odontologia foi pensado para proporcionar uma experiência mais confortável, acolhedora e tranquila. Um ambiente onde estética, funcionalidade e tecnologia se encontram para receber você com o cuidado que merece.</p>
+        </div>
+        <div class="clinic-tags reveal">
+          <span>Conforto</span><span>Tecnologia</span><span>Privacidade</span><span>Acolhimento</span>
+        </div>
+        <!-- Galeria com fotografias reais da clínica -->
+        <div class="clinic-gallery reveal">
+          <img src="/assets/img1.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img2.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img3.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img4.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img5.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img6.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img7.jpeg" alt="Dourados Odontologia" />
+          <img src="/assets/img8.jpeg" alt="Dourados Odontologia" />
+        </div>
+        <div class="reveal" style="margin-top:30px">
+          <a class="btn btn-primary" href={whatsappUrl} target="_blank">Conheça nossa clínica →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 — EXPERIÊNCIA DOS PACIENTES -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Experiência dos pacientes</div>
+          <h2>O que nossos pacientes dizem sobre essa experiência.</h2>
+          <p>Publicamos somente depoimentos reais e devidamente autorizados. Novos relatos serão adicionados em breve.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Em breve, os depoimentos reais dos nossos pacientes estarão aqui.”</p>
+            <div class="testimonial-author">— Equipe Dourados Odontologia</div>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Em breve, os depoimentos reais dos nossos pacientes estarão aqui.”</p>
+            <div class="testimonial-author">— Equipe Dourados Odontologia</div>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Em breve, os depoimentos reais dos nossos pacientes estarão aqui.”</p>
+            <div class="testimonial-author">— Equipe Dourados Odontologia</div>
+          </article>
+        </div>
+        <div class="reveal" style="margin-top:30px">
+          <a class="btn btn-light" href={whatsappUrl} target="_blank">Ver mais experiências →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 — RESULTADOS -->
+    <section class="section results" id="resultados">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Resultados</div>
+          <h2>Histórias reais. Sorrisos reais.</h2>
+          <p>Cada tratamento possui um planejamento único porque cada paciente possui uma história única. Casos clínicos autorizados, com imagens de qualidade, serão apresentados aqui.</p>
+        </div>
+        <div class="result-grid">
+          <article class="result-card reveal">
+            <div class="result-images"><span>Antes</span><span>Depois</span></div>
+            <div class="result-body">
+              <p><strong>Tratamento:</strong> a definir</p>
+              <p><strong>Planejamento:</strong> breve descrição do caso após autorização de uso de imagem.</p>
+            </div>
+          </article>
+          <article class="result-card reveal">
+            <div class="result-images"><span>Antes</span><span>Depois</span></div>
+            <div class="result-body">
+              <p><strong>Tratamento:</strong> a definir</p>
+              <p><strong>Planejamento:</strong> breve descrição do caso após autorização de uso de imagem.</p>
+            </div>
+          </article>
+        </div>
+        <div class="reveal" style="margin-top:30px">
+          <a class="btn btn-light" href={whatsappUrl} target="_blank">Ver mais casos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 — FILOSOFIA -->
+    <section class="section philosophy">
+      <div class="container reveal">
+        <div class="eyebrow">Nossa filosofia</div>
+        <h2>Seu sorriso não precisa parecer perfeito. Precisa parecer seu.</h2>
+        <p>Acreditamos em uma odontologia que respeita a individualidade. Não buscamos transformar pessoas em padrões. Buscamos valorizar aquilo que cada sorriso tem de único, utilizando conhecimento, técnica e tecnologia para alcançar resultados equilibrados, naturais e personalizados.</p>
+        <p><strong>O nosso propósito é cuidar de você. O sorriso é parte dessa transformação.</strong></p>
+      </div>
+    </section>
+
+    <!-- 12 — CHAMADA EMOCIONAL -->
+    <section class="section emotional">
+      <div class="container reveal">
+        <h2>Talvez esteja na hora de escolher você.</h2>
+        <p>Durante muito tempo, podemos adiar aquele cuidado que sabemos que merecemos. Uma consulta. Um tratamento. Um novo sorriso. Um momento para olhar para nós mesmos.</p>
+        <p>Mas toda transformação começa com uma escolha. A escolha de cuidar. A escolha de se priorizar. A escolha de começar.</p>
+        <a class="btn btn-primary" href={whatsappUrl} target="_blank">Quero começar →</a>
+      </div>
+    </section>
+
+    <!-- 13 — CTA FINAL -->
     <section class="cta" id="contato">
       <div class="container">
         <div class="cta-box reveal">
           <div>
-            <div class="eyebrow" style="color:#73e4ec">Seu próximo sorriso começa aqui</div>
-            <h2>Vamos cuidar do seu sorriso?</h2>
-            <p>Agende uma avaliação e descubra o tratamento mais adequado para você.</p>
+            <div class="eyebrow" style="color:#73e4ec">Dourados Odontologia</div>
+            <h2>O seu próximo sorriso começa com uma escolha.</h2>
+            <p>Permita-se viver uma nova experiência em odontologia. Agende sua avaliação e descubra um planejamento pensado especialmente para você.</p>
+            <p style="margin-top:10px;font-size:.85rem">Excelência em cada detalhe. Cuidado em cada sorriso.</p>
           </div>
-          <a class="btn" href="https://wa.me/5567998422189?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Dourados%20Odontologia." target="_blank">Agendar pelo WhatsApp ↗</a>
+          <a class="btn" href={whatsappUrl} target="_blank">Agendar minha avaliação ↗</a>
         </div>
       </div>
     </section>
@@ -134,7 +322,22 @@ import professionals from '../data/professionals.json';
       {professional.content && (
         <Fragment set:html={professional.content} />
       )}
+      {professional.bio && (
+        <p>{professional.bio}</p>
+      )}
     </DoctorModal>
+  ))}
+
+  {specialties.map((specialty) => (
+    <ServiceModal
+      slot="body"
+      id={`modal-service-${specialty.id}`}
+      title={specialty.title}
+      description={specialty.description}
+      longDescription={specialty.longDescription}
+      image={specialty.image}
+      highlights={specialty.highlights}
+    />
   ))}
 
   <SiteScripts slot="body" />
